@@ -1,6 +1,6 @@
 // . Write a JavaScript program to rotate the string 'w3resource' in right direction by periodically removing one letter from the end of the string and attaching it to the front.  
 
-function rotateStringRight(str,interval){
+function rotateStringRight(str){
     let arr=str.split("");
     let n=0;
     let id=setInterval(()=>{
@@ -13,9 +13,9 @@ function rotateStringRight(str,interval){
             clearInterval(id);
             console.log("stoped");
         }
-    },interval);
+    },1000);
 }
 
 
 
-rotateStringRight("w3resource",1000);
+rotateStringRight("w3resource");
